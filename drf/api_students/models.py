@@ -9,7 +9,7 @@ class students(models.Model):
     student_id = models.CharField(max_length=20, blank=True)
     parent_name = models.CharField(max_length=100)
     parent_occupation = models.CharField(max_length=100)
-    parent_address = models.TextField()
+    parent_address = models.TextField(blank=True, null=True)
     guardian_phone = models.CharField(max_length=10)
     parent_email = models.EmailField()
     
