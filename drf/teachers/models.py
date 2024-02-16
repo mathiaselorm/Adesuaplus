@@ -10,6 +10,7 @@ class Teachers(models.Model):
     address = models.TextField(blank=True, null=True)
     subjects_taught = models.ManyToManyField('Subject', related_name='teachers', blank=True)
     qualification = models.CharField(max_length=100, blank=True, null=True)
+    profile_picture = models.ImageField(upload_to='administrator_profile_pics/', blank=True, null=True)
     teacher_id = models.CharField(max_length=20, blank=True)
     
 
