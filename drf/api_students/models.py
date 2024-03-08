@@ -7,7 +7,7 @@ class students(models.Model):
     dob = models.DateField()
     grade = models.CharField(max_length=10)
     student_id = models.CharField(max_length=20, blank=True)
-    profile_picture = models.ImageField(upload_to='administrator_profile_pics/', blank=True, null=True)
+    profile_picture = models.ImageField(upload_to='students_profile_pic', blank=True, null=True)
     parent_name = models.CharField(max_length=100)
     parent_occupation = models.CharField(max_length=100)
     parent_address = models.TextField(blank=True, null=True)
